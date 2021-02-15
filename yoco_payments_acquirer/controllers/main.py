@@ -1,11 +1,19 @@
-# -*- coding: utf-8 -*-
-# from odoo import http
+-*- coding: utf-8 -*-
+import logging
+import pprint
+import requests
+import werkzeug
+
+from odoo import http
+from odoo.http import request
+
+_logger = logging.getLogger(__name__)
 
 
-# class YocoPaymentsAcquirer(http.Controller):
-#     @http.route('/yoco_payments_acquirer/yoco_payments_acquirer/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
+class YocoController(http.Controller):
+    @http.route('/yoco_payments_acquirer/yoco_payments_acquirer/', auth='public')
+    def index(self, **kw):
+        return "Hello, world"
 
 #     @http.route('/yoco_payments_acquirer/yoco_payments_acquirer/objects/', auth='public')
 #     def list(self, **kw):
