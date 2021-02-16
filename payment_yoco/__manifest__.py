@@ -33,6 +33,7 @@
     'demo': [
         'demo/demo.xml',
     ],
-    # 'application': True,
-    # 'installable': True
+    'images': ['static/description/icon.png'],
+    'installable': True,
+    'application': True,
 }
