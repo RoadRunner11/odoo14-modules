@@ -9,8 +9,7 @@ odoo.define('payment_yoco.payment_form', function (require) {
     var qweb = core.qweb;
     var _t = core._t;
 
-    ajax.loadXML('/yoco_payments_acquirer/static/src/xml/yoco_templates.xml', qweb);
-
+    
     PaymentForm.include({
 
         willStart: function () {
